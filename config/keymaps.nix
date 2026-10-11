@@ -65,6 +65,12 @@
     }
     {
       mode = "n";
+      key = "<leader>r";
+      action = "<cmd>lua vim.lsp.buf.rename()<cr>";
+      options.desc = "Rename";
+    }
+    {
+      mode = "n";
       key = "<leader><space>";
       action = "<cmd>lua Snacks.picker.files()<cr>";
       options.desc = "Find files";
